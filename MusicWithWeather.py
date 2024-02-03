@@ -32,7 +32,9 @@ def Kelvin_temp_to_celsius(Kelvin_temp):
   celsius = Kelvin_temp - 273.15
   return celsius
 
-apikey = "5d8f332ec63368693ae586fc9e84d2de"
+
+#Enter the assigned API key
+apikey = ""
 city = "Seoul"
 
 #OpenWeatherMap_api 불러오기
@@ -60,8 +62,13 @@ print("날씨 : {}(id = {})".format(seoul_weather_data.get_weather_descrip(), se
 
 def Get_RecomendMusic():
     #스포티파이api 라이브러리 불러오기
-    cid = '01227784bc6c4b5984ec45096b774caa'
-    secret = '7ac77010ccea44ebbc0eef4eef672427'
+
+    #Enter the assigned API key
+    cid = ''
+
+    #Enter the assigned API key
+    secret = ''
+    
     client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
     
     sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
